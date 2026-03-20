@@ -21,3 +21,17 @@ function calculateTotalCost(price, quantity, taxRate, discount = 0) {
 
     return totalCost;
 }
+
+
+//Task 3 check eligibility
+function checkEligibility(age, isEmployed) {
+    if (age > 18) {
+        if (isEmployed) {
+            return "You are eligible.";
+        } else {
+            return "You are conditionally eligible.";
+        }
+    }
+
+    return "You are not eligible.";
+}
